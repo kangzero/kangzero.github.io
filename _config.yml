@@ -7,7 +7,7 @@ description: "my private technical exploring in computer world"
 keyword: "Ning Kang, Leon Kang, C/C++, Programming Language, Algorithm, Linux, Embedded System"
 url: "http://kangzero.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/kangzero/kangzero.github.io" # you code repository
+github_repo: "https://github.com/kangzero/kangzero.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.

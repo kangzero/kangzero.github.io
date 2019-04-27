@@ -10,7 +10,7 @@
     <meta name="keywords"  content="Ning Kang, Leon Kang, C/C++, Programming Language, Algorithm, Linux, Embedded System">
     <meta name="theme-color" content="#000000">
     
-    <title>康宁的个人站点 | Leon(Ning) Kang</title>
+    <title>About - 康宁的个人站点 | Leon(Ning) Kang</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -22,7 +22,7 @@
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="http://kangzero.github.io/">
+    <link rel="canonical" href="http://kangzero.github.io/about/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -153,14 +153,14 @@
 
 
     <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/post-bg-desk.jpg')">
+<header class="intro-header" style="background-image: url('/img/post-bg-rwd.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
                 <div class="site-heading">
-                    <h1>一个字头的诞生</h1>
+                    <h1>About</h1>
                     <!--<hr class="small">-->
-                    <span class="subheading">Thinking will not overcome fear but action will.</span>
+                    <span class="subheading">Hey, this is BY.</span>
                 </div>
             </div>
         </div>
@@ -181,52 +181,123 @@
                 col-xs-12
                 postlist-container
             ">
-    			
-<div class="post-preview">
-    <a href="/2017/02/06/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
-        <h2 class="post-title">
-            快速搭建个人博客
-        </h2>
-        
-        <h3 class="post-subtitle">
-            手把手教你在半小时内搭建自己的个人博客(如果不踩坑的话🙈🙊🙉)
-        </h3>
-        
-        <div class="post-content-preview">
-            
-  正所谓前人栽树，后人乘凉。
+    			<!-- Language Selector -->
+<!-- <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected> 中文 Chinese </option>
+    <option value="1"> 英文 English </option>
+</select> -->
 
-  感谢Huxpro提供的博客模板
+<!-- Chinese Version -->
+<div class="zh post-container">
 
-  我的的博客
+    <!--copied from markdown -->
+    <blockquote><p>冰冻三尺 非一日之寒<br>
+    积土成山 非斯须之作</p></blockquote>
 
+    <p>Hey，我是<strong>柏荧(BY)</strong>，一只iOS程序猿，现在厦门工作。</p>
 
-前言
-从 Jekyll 到 GitHub Pages 中间踩了许多坑，终于把我的个人博客BY Blog搭建出来了。。。
+    <p>工作、学习之余，我还是一个健身爱好者，同时也非常喜欢拳击。</p>
 
-本教程针对的是不懂技术又想搭建个人博客的小白，操作简单暴力且快速。当然懂技术那就更好了。
+    <p>这是我的利用 <a href="https://pages.github.com/">GitHub Pages</a> 与 <a href="http://jekyll.com.cn/">Jekyll</a> 搭建的 个人博客。我在GitHub主页<a href="https://github.com/qiubaiying">👉GitHub·BY</a> 与 简书主页<a href="https://http://www.jianshu.com/u/e71990ada2fd">👉BY</a>。如果有什么问题，欢迎提出探讨~</p>
 
-看看看博客的主页样式：
+    <p></p>
+    
+    <h5>Talks</h5>
 
-
-
-在手机上的布局：
-
-
-
-废话不多说了，开始进入正文。
-
-...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by BY on February 6, 2017
-    </p>
+    <ul>
+        <li><a href="https://github.com">GitHub</a></li>
+        <li><a href="http://jekyll.com.cn/">jekyll</a></li>
+        <li><a href="http://huangxuan.me/">Hux</a></li> 
+        <li><a href="https://analytics.google.com/analytics">Google Analytics</a></li>
+    </ul>
 </div>
-<hr>
+
+<!-- English Version -->
+<!-- <div class="en post-container">
+    <blockquote><p>Yet another iOS Developer. <br>
+    Yet another Life-long Student.</p></blockquote>
+
+    <p>Hi, I am <strong>Baiying Qiu</strong>，you can call me <strong>BY</strong>. I am an iOS software engineer and currently working in Xiamen</p>
+
+    <p>This is my personal blog, through making Github Pages and Jekyll.My GitHub  👉 <a href="http://github.com/qiubaiying">Github·BY</a>.</p>
+    
+    <p>I am a sports enthusiast, I like fitness, running and boxing.</p>
+
+    <h5>Talks</h5>
+
+    <ul>
+    <li><a href="https://github.com">GitHub</a></li>
+    <li><a href="http://jekyll.com.cn/">jekyll</a></li>
+    <li><a href="https://pages.github.com/">GitHub Pages</a></li>
+    <li><a href="https://qiubaiying.github.io">BY</a></li>
+    </ul>
+</div> -->
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    // get nodes
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    var $select = document.querySelector("select");
+
+    // bind hashchange event
+    window.addEventListener('hashchange', _render);
+
+    // handle render
+    function _render(){
+        var _hash = window.location.hash;
+        // en
+        if(_hash == "#en"){
+            $select.selectedIndex = 1;
+            $en.style.display = "block";
+            $zh.style.display = "none";
+        // zh by default
+        }else{
+            // not trigger onChange, otherwise cause a loop call.
+            $select.selectedIndex = 0;
+            $zh.style.display = "block";
+            $en.style.display = "none";
+        }
+    }
+
+    // handle select change
+    function onLanChange(index){
+        if(index == 0){
+            window.location.hash = "#zh"
+        }else{
+            window.location.hash = "#en"
+        }
+    }
+
+    // init
+    _render();
+</script>
 
 
-<!-- Pager -->
+<!-- Gitalk 评论 start  -->
+
+<!-- Gitalk link  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+    <script type="text/javascript">
+    var gitalk = new Gitalk({
+    clientID: 'c0d8a868e06d67c15bb8',
+    clientSecret: 'b8bfcb947189e2afc29918e96ffae5bfe24891f2',
+    repo: 'kangzero.github.io',
+    owner: 'kangzero',
+    admin: ['kangzero'],
+    distractionFreeMode: true,
+    id: 'about',
+    });
+    gitalk.render('gitalk-container');
+</script>
+
+<!-- Gitalk end -->
+
+ <!-- disqus 评论框 start  -->
+
 
 
     		</div>

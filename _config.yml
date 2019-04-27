@@ -12,7 +12,7 @@ github_repo: "https://github.com/kangzero/kangzero.github.io.git" # you code rep
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Keep Moving!"
-sidebar-avatar: /img/avatar-by.jpg      # use absoilute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar-nk.jpg      # use absoilute URL, seeing it's used in both `/` and `/about/`
 
 
 

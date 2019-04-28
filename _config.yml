@@ -35,8 +35,8 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
- disqus:
-# Gitalk
+# disqus:
+ gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: c0d8a868e06d67c15bb8                            #生成的clientID
   clientSecret: b8bfcb947189e2afc29918e96ffae5bfe24891f2    #生成的clientSecret

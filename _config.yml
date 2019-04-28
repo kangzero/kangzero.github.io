@@ -35,14 +35,25 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+# disqus:
+# Gitalk
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: c0d8a868e06d67c15bb8                            #生成的clientID
+  clientSecret: b8bfcb947189e2afc29918e96ffae5bfe24891f2    #生成的clientSecret
+  repo: kangzero.github.io    #仓库名称
+  owner: kangzero    #github用户名
+  admin: kangzero
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
+ga_track_id: 'UA-138348394-1'            # Format: UA-xxxxxx-xx
+ga_domain: https://kangzero.github.io/   # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: https://kangzero.github.io/
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)

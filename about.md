@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This is a sofware Engineer who lives in Bay Area.
+This is a sofware Engineer who lives in Bay Area.  
 He attempts to be wise and is changing himself. 
 
 ### More Information
